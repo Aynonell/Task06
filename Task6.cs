@@ -8,7 +8,6 @@ namespace Tasks.Task6
         public int TitleToNumber(string columnTitle)
         {
             int sum = 0;
-            Console.WriteLine($"Tytul: {columnTitle}");
             int TitleLenght = columnTitle.Length;
             int j = TitleLenght-1;
             foreach (char letter in columnTitle)
