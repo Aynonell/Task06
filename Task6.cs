@@ -4,7 +4,8 @@ namespace Tasks.Task6
 
     public class Task06
     {
-        int magicNumber = 64;    
+        readonly int magicNumber = 64;
+        readonly int systemNumbers = 26;
         public int TitleToNumber(string columnTitle)
         {
             int sum = 0;
@@ -13,7 +14,7 @@ namespace Tasks.Task6
             foreach (char letter in columnTitle)
             {
                 int position = j;
-                int positionWeight= (int)Math.Pow(26,j);
+                int positionWeight= (int)Math.Pow(systemNumbers,j);
                 int letterValue = Convert.ToInt32(letter) - magicNumber;  // A = 1 
                 int positionletterWeight = positionWeight * letterValue;
                 j--;
